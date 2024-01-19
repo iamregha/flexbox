@@ -5,19 +5,34 @@ html, body{
     margin: 10px;
 }
 
-.container > div{
-    text-align: center;
+.container{
+    padding: 0;
+}
+
+.container > l1{
+    background-color: #96ceb4;
     padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #ffeead;
     font-size: 2em;
+    list-style-type: none;
+}
+
+::placeholder{
+    color: #ffeead;
+    font-size: 2em;
+}
+
+.search-input{
+    background: transparent;
+    border: 0;
+    width: 100%;
+    outline: 0;
+    border-bottom: 1px solid #ffeead;
     color: #ffeead;
 }
 
-.container > :nth-child(1){
-    background-color: #96ceb4;
-}
-.container > :nth-child(2){
-    background-color: #ff6f69;
-}
-.container > :nth-child(3){
-    background-color: #88d8b0;
+.search-input:focus{
+    outline: none;
 }
